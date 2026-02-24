@@ -1,0 +1,14 @@
+{
+  "site": {
+    "title": "Biblical Lexicon"
+  },
+
+  "lexicon": {
+    "title": "Biblical Lexicon",
+    "intro": "This lexicon presents the meaning of biblical symbols as they are used in prophetic books. Each definition is supported by the corresponding biblical texts."
+  },
+
+  "footer": {
+    "text": "© Biblical Information Project"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "site": {
+    "title": "Ligne du temps - Comprendre les prophéties bibliques"
+  },
+
+
+  "timeline": {
+    "btnPast": "Voir le tableau du passé",
+    "btnPresent": "Voir le tableau présent & futur",
+
+    "pastTitle": "Prophéties accomplies – Le passé",
+    "presentTitle": "Prophéties en cours et à venir – Présent & Futur"
+  }
+}

@@ -1,0 +1,141 @@
+bible\af\afr3353.xml;af;1933/1953 Afrikaans Bybel;oui
+bible\ar\arasvd.xml;ar;Smith Van Dyke Arabic Bible;oui
+bible\bg\bulveren.xml;bg;Veren's Contemporary Bible;oui
+bible\bg\bulcarigradnt.xml;bg;Tsarigrad Edition;oui
+bible\ch\chamorro.xml;ch;Chamorro: Y Santa Biblia (1908);oui
+bible\cs\czecep.xml;cs;Ekumenicky Cesky Preklad;oui
+bible\cs\czbkr.xml;cs;Bible Kralicka;oui
+bible\da\dan.xml;da;Danish Version;oui
+bible\de\zürcher.xml;de;Zürcher Bibel 1931;oui
+bible\de\albrecht1926.xml;de;Albrecht Bibel 1926;non
+bible\de\almnt.xml;de;Alemannische Bibel NT;non
+bible\de\amnt.xml;de;Abraham Meister NT;oui
+bible\de\elb1871.xml;de;Elberfelder 1871;oui
+bible\de\elb1871nt.xml;de;Elberfelder 1871 NT Original;non
+bible\de\elb1905.xml;de;Elberfelder 1905;oui
+bible\de\fb2004.xml;de;FreeBible2004;non
+bible\de\gerben.xml;de;Bengel NT;oui
+bible\de\gerneue.xml;de;Neue Evangelistische Übersetzung;non
+bible\de\greb.xml;de;Johannes Greber 1936 NT;oui
+bible\de\ilgrde.xml;de;Interlinearübersetzung;oui
+bible\de\knt.xml;de;Konkordantes NT;non
+bible\de\lut.1545.lh.xml;de;Luther 1545 (Letzte Hand);non
+bible\de\luth1545.xml;de;Luther 1545;oui
+bible\de\luth1912.xml;de;Luther 1912;oui
+bible\de\luth1912ap.xml;de;Luther 1912 - mit Apokryphen;oui
+bible\de\meng39.xml;de;Menge-Bibel;oui
+bible\de\pat80.xml;de;Pattloch Bibel;oui
+bible\de\rei10ev.xml;de;Reinhardt 1910 Evangelien;oui
+bible\de\sch1951.xml;de;Schlachter 1951;non
+bible\de\taf.xml;de;Tafelbibel;non
+bible\de\tb.xml;de;Textbibel;oui
+bible\de\textbibelat.xml;de;Textbibel;oui
+bible\de\vaness.xml;de;Leander van Ess, rev.2;oui
+bible\de\vlx3.xml;de;Volxbibel 3.0;non
+bible\en\web.xml;en;World English Bible;oui
+bible\en\acv.xml;en;A Conservative Version;non
+bible\en\asv.xml;en;American Standard Version;oui
+bible\en\bbe.xml;en;Bible in Basic English;oui
+bible\en\bible.akjv.xml;en;American King James Version;oui
+bible\en\bible.en.leb.2010.xml;en;The Lexham English Bible;non
+bible\en\bom.xml;en;The Book of Mormon;non
+bible\en\darby.xml;en;Darby Bible;oui
+bible\en\diaglot.xml;en;Diaglot NT - 1865;oui
+bible\en\dour.xml;en;Douay Rheims;oui
+bible\en\emtv.xml;en;English Majority Text Version;non
+bible\en\etheridge.xml;en;The Peschito Syriac New Testament;oui
+bible\en\gb.xml;en;Geneva Bible;oui
+bible\en\isv.xml;en;ISV NT;non
+bible\en\jps.xml;en;Jewish Publication Society AT;non
+bible\en\jubl2000.xml;en;English Jubilee 2000 Bible;non
+bible\en\kj2000.xml;en;King James 2000;non
+bible\en\kjv.xml;en;King James Version;oui
+bible\en\leb.xml;en;The Lexham English Bible;non
+bible\en\leeser.xml;en;Leeser Old Testament;oui
+bible\en\lont.xml;en;Living Oracles NT;oui
+bible\en\mkjv1962.xml;en;Modern KJV 1963;oui
+bible\en\mont.xml;en;Montgomery New Testament;oui
+bible\en\nheb.xml;en;New Heart English Bible;oui
+bible\en\nsb.xml;en;New Simplified Bible;non
+bible\en\rnt.xml;en;The Riverside New Testament;non
+bible\en\roth.xml;en;Rotherham Version;non
+bible\en\rsv.xml;en;Revised Standard Version;non
+bible\en\rwebster.xml;en;Revised 1833 Webster Version;oui
+bible\en\rylt.xml;en;Revised Young's Literal Translation NT;oui
+bible\en\tce.xml;en;The Common Edition: New Testament;oui
+bible\en\tyndale.xml;en;Willam Tyndale Bible;oui
+bible\en\ukjv.xml;en;Updated King James Version;oui
+bible\en\updv.xml;en;Updated Bible Version;non
+bible\en\wbs.xml;en;Webster;oui
+bible\en\wesley.xml;en;Wesley's NT;non
+bible\en\wmth.xml;en;Weymouth NT;oui
+bible\en\wycliffe.xml;en;John Wycliffe Bible;oui
+bible\en\xxx.xml;en;VW-Edition 2006;non
+bible\en\ylt.xml;en;YLT;oui
+bible\es\sparv.xml;es;Spanish Reina-Valera;oui
+bible\es\rva.xml;es;Reina Valera 1989;non
+bible\es\sev.xml;es;Las Sagradas Escrituras;oui
+bible\eu\basq1571.xml;eu;Basque(Navarro-Labourdin)NT;oui
+bible\fi\fin.xml;fi;Finish Version;oui
+bible\fr\fren.xml;fr;French Louis Segond;non
+bible\fr\bdc.xml;fr;Bible Pirot-Clamer;oui
+bible\fr\bdp.xml;fr;Bible des Peuples;oui
+bible\fr\bgnt1669.xml;fr;Bible de Genève de 1669;oui
+bible\fr\bm1844.xml;fr;Bible Martin 1844;oui
+bible\fr\bo1877.xml;fr;Ostervald 1877;non
+bible\fr\bzkh.xml;fr;La Bible de Zadoc Khan;oui
+bible\fr\cramp23.xml;fr;La Bible Augustin Crampon 1923;oui
+bible\fr\dejer.xml;fr;La Bible de Jérusalem;non
+bible\fr\fill.xml;fr;La Bible Fillion de Louis Claude Fillion;oui
+bible\fr\frdarb.xml;fr;French Darby;oui
+bible\fr\frebbb.xml;fr;French Bible Bovet Bonnet (1900);non
+bible\fr\frepgr.xml;fr;Bible Perret-Gentil et Rilliet;oui
+bible\fr\jnd.xml;fr;French Darby 2006;oui
+bible\fr\kjf.xml;fr;King James Française;non
+bible\fr\mach2012.xml;fr;La Bible Machaira;non
+bible\fr\ostv1996.xml;fr;La Bible J.F. Ostervald 1996;oui
+bible\fr\sacc.xml;fr;La Bible de Saci 1759;oui
+bible\fr\vigouroux.xml;fr;Bible Vigouroux 1902;oui
+bible\gd\gla2.xml;gd;Gaelic Scripture (Manx Gaelic);oui
+bible\he\osmhb.xml;he;Open Scriptures Morphological Hebrew Bible;oui
+bible\he\alep.xml;he;Aleppo Codex;oui
+bible\he\bhs.xml;he;Biblia hebraica;non
+bible\he\hebm.xml;he;Modern Hebrew Bible;oui
+bible\he\wcl.xml;he;Westminster Leningrad Codex;oui
+bible\hr\croat.xml;hr;Croatian Bible Version;oui
+bible\ht\hat.xml;ht;Haitian Creole Version;oui
+bible\hu\hun.xml;hu;Hungarian Version;oui
+bible\hu\hunuj.xml;hu;Magyar Újfordítású;oui
+bible\it\cei74.xml;it;La Bibbia CEI 74;oui
+bible\it\irv_1990.xml;it;Riveduta 1990;non
+bible\it\itadio.xml;it;1649 Italian Giovanni Diodati Bibbia;oui
+bible\it\italian1.xml;it;Italian Version;oui
+bible\it\lnd_1991.xml;it;La Nuova Diodati 1991;non
+bible\ko\kor.xml;ko;Korean Version;oui
+bible\la\vulgata.xml;la;Biblia Sacra Vulgata;oui
+bible\la\clvul.xml;la;Clementine Vulgate;oui
+bible\la\nvla.xml;la;Nova Vulgata;non
+bible\lv\latv.xml;lv;Lativian Version;oui
+bible\mi\mao.xml;mi;Maori Version;oui
+bible\no\norsmb.xml;NO;Studentmållagsbibelen frå 1921;oui
+bible\no\nor.xml;no;Norwegian Version;oui
+bible\pl\poland.xml;pl;Polska Biblia;oui
+bible\pt\acf.xml;pt;Portuguese Corrigida Fiel (1753/1995);oui
+bible\pt\port.xml;pt;Portuguese Version;oui
+bible\ro\ru.xml;ro;Rumanian Version;oui
+bible\ru\russub.xml;ru;Russian Version;oui
+bible\ru\rst.xml;ru;Russian Synodal Translation;non
+bible\ru\rusvzh.xml;ru;Russian New Testament Strongs;non
+bible\ru\ukrub.xml;ru;Ukrainian Version;oui
+bible\sq\alb1.xml;sq;Albanian Version;oui
+bible\sv\svd.xml;sv;Swedish 1917 Version;oui
+bible\sv\swefolk1998.xml;sv;Svenska Folkbibeln (1998);non
+bible\sw\swa.xml;sw;Swahili NT;oui
+bible\th\kjvthai.xml;th;KJV-Thai;non
+bible\tl\tlgangbiblia.xml;tl;Ang Dating Biblia;oui
+bible\tr\bb31.xml;tr;Turkish;oui
+bible\vi\vietnvb.xml;vi;New Vietnamese Bible (2002);non
+bible\vi\vie.xml;vi;Vietnamese Version;oui
+bible\zh\chi.xml;zh;Chinese Union Version;oui
+bible\zh\chius.xml;zh;CHINESE UNION VERSION Simplified;oui
+bible\zh\cvs.xml;zh;New Chinese Version Simplified;non

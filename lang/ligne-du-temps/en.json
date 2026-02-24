@@ -1,0 +1,11 @@
+{
+  "site": {
+    "title": "Timeline – Understanding Biblical Prophecies"
+  },
+  "timeline": {
+    "btnPast": "View the past timeline",
+    "btnPresent": "View the present & future timeline",
+    "pastTitle": "Fulfilled Prophecies – The Past",
+    "presentTitle": "Ongoing and Future Prophecies – Present & Future"
+  }
+}

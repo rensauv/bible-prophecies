@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <title data-i18n="site.title">
+        Lexique biblique
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css?v=1">
+</head>
+
+<body>
+
+<!-- Navigation fixe -->
+<nav class="top-nav">
+	<div class="nav-left">
+	<span class="site-title" data-i18n="nav.siteTitle">Prophéties bibliques</span>
+	</div>
+
+<div class="nav-center">
+    <a href="livre.html" data-i18n="nav.livres">Livres</a>
+    <a href="video.html" data-i18n="nav.videos">Vidéos</a>
+    <a href="lexique.html" data-i18n="nav.lexique">Lexique</a>
+    <a href="ligne-du-temps.html" data-i18n="nav.ligneDuTemps">Ligne du temps</a>
+</div>
+
+<div class="nav-right">
+    <div class="lang-dropdown">
+        <button id="currentLangBtn">Français ▾</button>
+        <ul id="langMenu" class="lang-menu">
+            <!-- les options seront générées par JS -->
+        </ul>
+    </div>
+</div>
+
+</nav>
+
+<!-- Contenu principal -->
+<main class="lexique">
+
+    <h1 data-i18n="lexicon.title">
+        Lexique biblique
+    </h1>
+
+    <p class="intro" data-i18n="lexicon.intro">
+        Ce lexique présente la signification des symboles bibliques
+        tels qu’ils sont utilisés dans les livres prophétiques.
+        Chaque définition est appuyée par les textes bibliques correspondants.
+    </p>
+
+    <!-- Conteneur pour les mots -->
+    <div id="lexique-container"></div>
+
+</main>
+
+<footer data-i18n="footer.text">
+    © Projet d’information biblique
+</footer>
+
+<script src="js/lang.js"></script>
+<script src="js/bible-engine-lexique.js"></script>
+
+</body>
+</html>

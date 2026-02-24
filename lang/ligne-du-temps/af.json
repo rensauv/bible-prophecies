@@ -1,0 +1,13 @@
+{
+  "site": {
+    "title": "Tydlyn – Begrip van Bybelse profesieë"
+  },
+
+  "timeline": {
+    "btnPast": "Sien die tabel van die verlede",
+    "btnPresent": "Sien die tabel van hede & toekoms",
+
+    "pastTitle": "Vervulde profesieë – Die verlede",
+    "presentTitle": "Lopende en toekomstige profesieë – Hede & Toekoms"
+  }
+}

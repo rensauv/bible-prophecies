@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Lecteur de Bible</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    font-family: Georgia, serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+select, button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+#reference {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 24px; /* <- taille du texte en pixels */
+}
+
+
+.verse {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.verse-number {
+    font-weight: bold;
+    margin-right: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="controls">
+
+<select id="versionSelect"></select>
+<select id="bookSelect"></select>
+<select id="chapterSelect"></select>
+<select id="verseSelect" style="display:none;">
+    <option value="all">Tous les versets</option>
+</select>
+
+<button id="prevBtn">◀ Précédent</button>
+<button id="nextBtn">Suivant ▶</button>
+
+</div>
+
+<div id="reference"></div>
+<div id="content"></div>
+
+</div>
+
+<script>
+// ================= lecture de la langue =================
+fetch("bible_index.txt")
+.then(res => res.text())
+.then(text => {
+    parseBibleIndex(text);
+
+    // --- lire la langue sauvegardée ---
+    let siteLang = localStorage.getItem("siteLang") || "fr";
+
+    // Chercher la première bible correspondant à la langue
+    let index = bibleList.findIndex(b => b.lang === siteLang);
+    if (index === -1) index = 0; // fallback si pas trouvé
+
+    // Sélectionner la bonne option dans le menu
+    versionSelect.value = index;
+
+    // Charger la bible
+    loadBible(index);
+});
+
+
+// ================= langue sauvegarde =================
+/*
+versionSelect.addEventListener("change", e => {
+    const index = parseInt(e.target.value);
+    
+    // Mettre à jour la langue dans localStorage
+    const lang = bibleList[index].lang;
+    localStorage.setItem("siteLang", lang);
+
+    loadBible(index);
+});
+*/
+
+// ================= VARIABLES =================
+let bibleList = [];
+let currentBibleFile = "";
+
+let bibleData = [];
+let currentBook = 0;
+let currentChapter = 0;
+let currentVerse = "all";
+
+const versionSelect = document.getElementById("versionSelect");
+const bookSelect = document.getElementById("bookSelect");
+const chapterSelect = document.getElementById("chapterSelect");
+const verseSelect = document.getElementById("verseSelect");
+
+const contentDiv = document.getElementById("content");
+const referenceDiv = document.getElementById("reference");
+
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+
+// ================= PARSER bible_index.txt =================
+function parseBibleIndex(text) {
+    const lines = text.split("\n");
+
+    lines.forEach(line => {
+        if (!line.trim()) return;
+        const parts = line.split(";");
+        if (parts.length < 3) return;
+
+        const file = parts[0].trim();
+        const lang = parts[1].trim();
+        const title = parts[2].trim();
+
+        bibleList.push({ file, lang, title });
+    });
+
+    // Remplir le menu versions
+    bibleList.forEach((bible, i) => {
+        const opt = document.createElement("option");
+        opt.value = i;
+        opt.textContent = `${bible.title} (${bible.lang})`;
+        versionSelect.appendChild(opt);
+    });
+}
+
+// ================= CHARGER UNE BIBLE =================
+function loadBible(index) {
+
+    bibleData = [];
+    currentBook = 0;
+    currentChapter = 0;
+    currentVerse = "all";
+
+    const bible = bibleList[index];
+    currentBibleFile = bible.file.replace(/\\/g, "/");
+
+    fetch(currentBibleFile)
+
+    .then(res => res.text())
+
+    .then(text => {
+
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(text, "text/xml");
+
+        parseBible(xml);
+        initSelectors();
+
+        // <<< ICI : lire l'URL >>>
+        loadFromURL();
+
+        displayText();
+    });
+}
+
+
+// ================= PARSER OSIS =================
+function parseBible(xml) {
+    const books = xml.querySelectorAll("div[type='book']");
+    books.forEach(book => {
+        const bookId = book.getAttribute("osisID");
+        const chapters = [];
+
+        book.querySelectorAll("chapter").forEach(chapter => {
+            const verses = [];
+            chapter.querySelectorAll("verse").forEach(verse => {
+                verses.push(verse.textContent.trim());
+            });
+            chapters.push(verses);
+        });
+
+        bibleData.push({ id: bookId, chapters: chapters });
+    });
+}
+
+// ================= INITIALISER MENUS =================
+function initSelectors() {
+    bookSelect.innerHTML = "";
+    bibleData.forEach((book, index) => {
+        const opt = document.createElement("option");
+        opt.value = index;
+        opt.textContent = book.id;
+        bookSelect.appendChild(opt);
+    });
+
+    updateChapters();
+}
+
+// ================= METTRE À JOUR CHAPITRES =================
+function updateChapters(keepCurrent = false) {
+
+    chapterSelect.innerHTML = "";
+
+    const chapters = bibleData[currentBook].chapters;
+
+    chapters.forEach((_, index) => {
+
+        const opt = document.createElement("option");
+
+        opt.value = index;
+        opt.textContent = "Chapitre " + (index + 1);
+
+        chapterSelect.appendChild(opt);
+    });
+
+
+    // Ne pas forcer à 0 si demandé
+    if (!keepCurrent) {
+        currentChapter = 0;
+    }
+}
+
+
+// ================= METTRE À JOUR VERSETS =================
+function updateVerses() {
+    verseSelect.innerHTML = "";
+
+    const allOpt = document.createElement("option");
+    allOpt.value = "all";
+    allOpt.textContent = "Tous les versets";
+    verseSelect.appendChild(allOpt);
+
+    const verses = bibleData[currentBook].chapters[currentChapter];
+    verses.forEach((_, index) => {
+        const opt = document.createElement("option");
+        opt.value = index;
+        opt.textContent = "Verset " + (index + 1);
+        verseSelect.appendChild(opt);
+    });
+
+    currentVerse = "all";
+}
+
+// ================= AFFICHAGE =================
+function displayText() {
+    contentDiv.innerHTML = "";
+
+    const book = bibleData[currentBook];
+    const chapter = book.chapters[currentChapter];
+
+    let ref = book.id + " " + (currentChapter + 1);
+    referenceDiv.textContent = ref;
+
+    if (currentVerse === "all") {
+        chapter.forEach((text, i) => addVerse(i + 1, text));
+    } else {
+        const i = parseInt(currentVerse);
+        addVerse(i + 1, chapter[i]);
+        referenceDiv.textContent += ":" + (i + 1);
+    }
+}
+
+function addVerse(num, text) {
+    const div = document.createElement("div");
+    div.className = "verse";
+    div.innerHTML = `<span class="verse-number">${num}</span>${text}`;
+    contentDiv.appendChild(div);
+}
+
+// ================= EVENTS =================
+bookSelect.addEventListener("change", e => {
+    currentBook = parseInt(e.target.value);
+    updateChapters();
+    displayText();
+});
+
+chapterSelect.addEventListener("change", e => {
+    currentChapter = parseInt(e.target.value);
+    updateVerses();
+    displayText();
+});
+
+verseSelect.addEventListener("change", e => {
+    currentVerse = e.target.value;
+    displayText();
+});
+
+prevBtn.addEventListener("click", () => {
+    if (chapterSelect.selectedIndex > 0) {
+        chapterSelect.selectedIndex--;
+        chapterSelect.dispatchEvent(new Event("change"));
+    } else if (bookSelect.selectedIndex > 0) {
+        bookSelect.selectedIndex--;
+        bookSelect.dispatchEvent(new Event("change"));
+    }
+});
+
+nextBtn.addEventListener("click", () => {
+    if (chapterSelect.selectedIndex < chapterSelect.options.length - 1) {
+        chapterSelect.selectedIndex++;
+        chapterSelect.dispatchEvent(new Event("change"));
+    } else if (bookSelect.selectedIndex < bookSelect.options.length - 1) {
+        bookSelect.selectedIndex++;
+        bookSelect.dispatchEvent(new Event("change"));
+    }
+});
+
+
+
+function syncSelectors() {
+
+    // Livre
+    bookSelect.value = currentBook;
+
+
+    // Chapitres (sans reset)
+    updateChapters(true);
+
+
+    // Sélectionner le bon chapitre
+    chapterSelect.value = currentChapter;
+
+
+    // Versets
+    updateVerses();
+
+
+    // Verset précis
+    verseSelect.value = currentVerse;
+
+
+    displayText();
+}
+
+
+// ================= CHANGEMENT DE VERSION =================
+versionSelect.addEventListener("change", e => {
+    const index = parseInt(e.target.value);
+    loadBible(index);
+});
+
+// ================= LECTURE PARAM URL =================
+function loadFromURL() {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const bookId = params.get("book");
+    const chapter = params.get("chapter");
+    const verse = params.get("verse");
+
+    if (!bookId || !chapter) return;
+
+    const bookIndex = bibleData.findIndex(
+        b => b.id.toUpperCase() === bookId.toUpperCase()
+    );
+
+    if (bookIndex === -1) return;
+
+    currentBook = bookIndex;
+    currentChapter = parseInt(chapter) - 1;
+    currentVerse = verse ? verse : "all";
+
+    syncSelectors();
+}
+
+
+</script>
+
+</body>
+</html>

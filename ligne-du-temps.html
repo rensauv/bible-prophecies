@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <title data-i18n="site.title">
+        Ligne du temps - Comprendre les prophéties bibliques
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation fixe -->
+<nav class="top-nav">
+	<div class="nav-left">
+	<span class="site-title" data-i18n="nav.siteTitle">Prophéties bibliques</span>
+	</div>
+
+<div class="nav-center">
+    <a href="livre.html" data-i18n="nav.livres">Livres</a>
+    <a href="video.html" data-i18n="nav.videos">Vidéos</a>
+    <a href="lexique.html" data-i18n="nav.lexique">Lexique</a>
+    <a href="ligne-du-temps.html" data-i18n="nav.ligneDuTemps">Ligne du temps</a>
+</div>
+
+<div class="nav-right">
+    <div class="lang-dropdown">
+        <button id="currentLangBtn">Français ▾</button>
+        <ul id="langMenu" class="lang-menu">
+            <!-- les options seront générées par JS -->
+        </ul>
+    </div>
+</div>
+
+</nav>
+
+<!-- Contenu principal -->
+<main class="timeline-page">
+
+    <!-- Boutons -->
+    <div class="timeline-switch">
+
+        <button
+            class="active"
+            onclick="showTimeline('passe')"
+            data-i18n="timeline.btnPast">
+            Voir le tableau du passé
+        </button>
+
+        <button
+            onclick="showTimeline('present')"
+            data-i18n="timeline.btnPresent">
+            Voir le tableau présent & futur
+        </button>
+
+    </div>
+
+    <!-- PASSÉ -->
+    <section id="passe" class="timeline-embed active">
+
+        <h2 data-i18n="timeline.pastTitle">
+            Prophéties accomplies – Le passé
+        </h2>
+
+        <iframe
+            src="TableauPasse.html"
+            class="timeline-frame"
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+    <!-- PRÉSENT / FUTUR -->
+    <section id="present" class="timeline-embed">
+
+        <h2 data-i18n="timeline.presentTitle">
+            Prophéties en cours et à venir – Présent & Futur
+        </h2>
+
+        <iframe
+            src="TableauPresentFutur.html"
+            class="timeline-frame"
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+</main>
+
+
+<!-- JS -->
+<script src="js/lang.js"></script>
+<script src="js/bible-engine.js"></script>
+
+<script>
+function showTimeline(id) {
+
+    document.querySelectorAll('.timeline-embed').forEach(el => {
+        el.classList.remove('active');
+    });
+
+    document.querySelectorAll('.timeline-switch button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    document.getElementById(id).classList.add('active');
+
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>

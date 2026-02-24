@@ -1,0 +1,317 @@
+{
+  "af": {
+    "siteTitle": "Bybelse Profesiës",
+    "nav": {
+      "livres": "Boeke",
+      "videos": "Videos",
+      "lexique": "Woordelys",
+      "ligneDuTemps": "Tydlyn"
+    }
+  },
+  "ar": {
+    "siteTitle": "نبوءات الكتاب المقدس",
+    "nav": {
+      "livres": "كتب",
+      "videos": "فيديوهات",
+      "lexique": "قاموس",
+      "ligneDuTemps": "الخط الزمني"
+    }
+  },
+  "bg": {
+    "siteTitle": "Библейски Пророчества",
+    "nav": {
+      "livres": "Книги",
+      "videos": "Видео",
+      "lexique": "Речник",
+      "ligneDuTemps": "Хронология"
+    }
+  },
+  "ch": {
+    "siteTitle": "圣经预言",
+    "nav": {
+      "livres": "书卷",
+      "videos": "视频",
+      "lexique": "词汇表",
+      "ligneDuTemps": "时间线"
+    }
+  },
+  "cs": {
+    "siteTitle": "Biblické Proroctví",
+    "nav": {
+      "livres": "Knihy",
+      "videos": "Videa",
+      "lexique": "Slovník",
+      "ligneDuTemps": "Časová osa"
+    }
+  },
+  "da": {
+    "siteTitle": "Bibelske Profetier",
+    "nav": {
+      "livres": "Bøger",
+      "videos": "Videoer",
+      "lexique": "Ordforråd",
+      "ligneDuTemps": "Tidslinje"
+    }
+  },
+  "de": {
+    "siteTitle": "Biblische Prophezeiungen",
+    "nav": {
+      "livres": "Bücher",
+      "videos": "Videos",
+      "lexique": "Glossar",
+      "ligneDuTemps": "Zeitleiste"
+    }
+  },
+  "en": {
+    "siteTitle": "Biblical Prophecies",
+    "nav": {
+      "livres": "Books",
+      "videos": "Videos",
+      "lexique": "Glossary",
+      "ligneDuTemps": "Timeline"
+    }
+  },
+  "es": {
+    "siteTitle": "Profecías Bíblicas",
+    "nav": {
+      "livres": "Libros",
+      "videos": "Videos",
+      "lexique": "Glosario",
+      "ligneDuTemps": "Línea de tiempo"
+    }
+  },
+  "eu": {
+    "siteTitle": "Bibliazko Iragarpenak",
+    "nav": {
+      "livres": "Liburuak",
+      "videos": "Bideoak",
+      "lexique": "Hiztegia",
+      "ligneDuTemps": "Denbora-lerroa"
+    }
+  },
+    "fi": {
+    "siteTitle": "Raamatun Ennustukset",
+    "nav": {
+      "livres": "Kirjat",
+      "videos": "Videot",
+      "lexique": "Sanasto",
+      "ligneDuTemps": "Aikajana"
+    }
+  },
+  "fr": {
+    "siteTitle": "Prophéties bibliques",
+    "nav": {
+      "livres": "Livres",
+      "videos": "Vidéos",
+      "lexique": "Lexique",
+      "ligneDuTemps": "Ligne du temps"
+    }
+  },
+  "gd": {
+    "siteTitle": "Fàisneachdan Bhìoball",
+    "nav": {
+      "livres": "Leabhraichean",
+      "videos": "Bhidio",
+      "lexique": "Faclair",
+      "ligneDuTemps": "Sreath-ùine"
+    }
+  },
+  "he": {
+    "siteTitle": "נבואות מקראיות",
+    "nav": {
+      "livres": "ספרים",
+      "videos": "סרטונים",
+      "lexique": "מילון",
+      "ligneDuTemps": "ציר זמן"
+    }
+  },
+  "hr": {
+    "siteTitle": "Biblijske Proročke",
+    "nav": {
+      "livres": "Knjige",
+      "videos": "Video",
+      "lexique": "Rječnik",
+      "ligneDuTemps": "Vremenska linija"
+    }
+  },
+  "ht": {
+    "siteTitle": "Pwofesi Biblik",
+    "nav": {
+      "livres": "Liv",
+      "videos": "Videyo",
+      "lexique": "Glosè",
+      "ligneDuTemps": "Liy tan"
+    }
+  },
+  "hu": {
+    "siteTitle": "Bibliai Próféciák",
+    "nav": {
+      "livres": "Könyvek",
+      "videos": "Videók",
+      "lexique": "Szószedet",
+      "ligneDuTemps": "Idővonal"
+    }
+  },
+  "it": {
+    "siteTitle": "Profezie Bibliche",
+    "nav": {
+      "livres": "Libri",
+      "videos": "Video",
+      "lexique": "Glossario",
+      "ligneDuTemps": "Cronologia"
+    }
+  },
+  "ko": {
+    "siteTitle": "성경 예언",
+    "nav": {
+      "livres": "책",
+      "videos": "비디오",
+      "lexique": "용어집",
+      "ligneDuTemps": "타임라인"
+    }
+  },
+  "la": {
+    "siteTitle": "Prophetiae Biblicae",
+    "nav": {
+      "livres": "Libri",
+      "videos": "Videos",
+      "lexique": "Glossarium",
+      "ligneDuTemps": "Tempus Linea"
+    }
+  },
+    "lv": {
+    "siteTitle": "Bibliskās pravietojumi",
+    "nav": {
+      "livres": "Grāmatas",
+      "videos": "Video",
+      "lexique": "Vārdnīca",
+      "ligneDuTemps": "Laika līnija"
+    }
+  },
+  "mi": {
+    "siteTitle": "Pāhi Rongonui o te Paipera",
+    "nav": {
+      "livres": "Pukapuka",
+      "videos": "Ataata",
+      "lexique": "Rārangi Kupu",
+      "ligneDuTemps": "Rāhui Rā"
+    }
+  },
+  "no": {
+    "siteTitle": "Bibliske Profetier",
+    "nav": {
+      "livres": "Bøker",
+      "videos": "Videoer",
+      "lexique": "Ordforråd",
+      "ligneDuTemps": "Tidslinje"
+    }
+  },
+  "pl": {
+    "siteTitle": "Proroctwa Biblijne",
+    "nav": {
+      "livres": "Książki",
+      "videos": "Wideo",
+      "lexique": "Słownik",
+      "ligneDuTemps": "Oś Czasu"
+    }
+  },
+  "pt": {
+    "siteTitle": "Profecias Bíblicas",
+    "nav": {
+      "livres": "Livros",
+      "videos": "Vídeos",
+      "lexique": "Glossário",
+      "ligneDuTemps": "Linha do Tempo"
+    }
+  },
+  "ro": {
+    "siteTitle": "Profețiile Biblice",
+    "nav": {
+      "livres": "Cărți",
+      "videos": "Videoclipuri",
+      "lexique": "Glosar",
+      "ligneDuTemps": "Liniile Timpului"
+    }
+  },
+  "ru": {
+    "siteTitle": "Библейские Пророчества",
+    "nav": {
+      "livres": "Книги",
+      "videos": "Видео",
+      "lexique": "Глоссарий",
+      "ligneDuTemps": "Линия Времени"
+    }
+  },
+  "sq": {
+    "siteTitle": "Profeci Biblike",
+    "nav": {
+      "livres": "Libra",
+      "videos": "Video",
+      "lexique": "Fjalor",
+      "ligneDuTemps": "Linja e Kohës"
+    }
+  },
+  "sv": {
+    "siteTitle": "Bibliska Profetior",
+    "nav": {
+      "livres": "Böcker",
+      "videos": "Videor",
+      "lexique": "Ordbok",
+      "ligneDuTemps": "Tidslinje"
+    }
+  },
+  "sw": {
+    "siteTitle": "Unabii wa Biblia",
+    "nav": {
+      "livres": "Vitabu",
+      "videos": "Video",
+      "lexique": "Kamusi",
+      "ligneDuTemps": "Mstari wa Wakati"
+    }
+  },
+    "th": {
+    "siteTitle": "คำทำนายทางพระคัมภีร์",
+    "nav": {
+      "livres": "หนังสือ",
+      "videos": "วิดีโอ",
+      "lexique": "พจนานุกรม",
+      "ligneDuTemps": "เส้นเวลา"
+    }
+  },
+  "tl": {
+    "siteTitle": "Mga Propesiya ng Bibliya",
+    "nav": {
+      "livres": "Mga Aklat",
+      "videos": "Mga Video",
+      "lexique": "Glosaryo",
+      "ligneDuTemps": "Timeline"
+    }
+  },
+  "tr": {
+    "siteTitle": "Kutsal Kitap Kehanetleri",
+    "nav": {
+      "livres": "Kitaplar",
+      "videos": "Videolar",
+      "lexique": "Sözlük",
+      "ligneDuTemps": "Zaman Çizelgesi"
+    }
+  },
+  "vi": {
+    "siteTitle": "Lời Tiên Tri Kinh Thánh",
+    "nav": {
+      "livres": "Sách",
+      "videos": "Video",
+      "lexique": "Từ điển",
+      "ligneDuTemps": "Dòng thời gian"
+    }
+  },
+  "zh": {
+    "siteTitle": "圣经预言",
+    "nav": {
+      "livres": "书籍",
+      "videos": "视频",
+      "lexique": "词汇",
+      "ligneDuTemps": "时间线"
+    }
+  }
+}

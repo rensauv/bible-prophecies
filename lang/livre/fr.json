@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Prophéties bibliques"
+  },
+
+  "intro": {
+    "text": "Ces trois livres explorent les prophéties bibliques : celles qui se sont accomplies, celles qui s’accomplissent aujourd’hui et celles qui sont encore à venir. En constatant l’exactitude des prophéties passées et présentes, nous sommes invités à placer toute notre confiance en Celui qui les a annoncées."
+  },
+
+  "books": {
+
+    "book1": {
+      "title": "Titre 1",
+      "description": "Résumé du livre 1. Ce livre présente les prophéties déjà accomplies et leur signification."
+    },
+
+    "book2": {
+      "title": "Titre 2",
+      "description": "Résumé du livre 2. Analyse des prophéties actuelles et de leur contexte."
+    },
+
+    "book3": {
+      "title": "Titre 3",
+      "description": "Résumé du livre 3. Étude des prophéties futures et de leur accomplissement."
+    }
+
+  },
+
+  "store": {
+    "available": "Disponible sur :"
+  },
+
+  "footer": {
+    "text": "© Projet d’information biblique"
+  }
+}

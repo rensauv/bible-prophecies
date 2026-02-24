@@ -1,0 +1,587 @@
+/* ============================= */
+/*          CSS GLOBAL           */
+/* ============================= */
+
+
+
+
+/* Base */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    box-sizing: border-box;
+	height: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* verset ajouté */
+.bible-inline {
+    font-style: italic !important;
+    color: #2c3e50 !important;
+}
+
+.bible-inline a {
+    font-weight: bold !important;
+    color: #1a5276 !important;
+    text-decoration: none !important;
+}
+
+.bible-inline a:hover {
+    text-decoration: underline !important;
+}
+
+
+.bible-inline span.verse {
+    vertical-align: super !important; 
+    font-size: 0.8em !important;
+    color: #999999 !important;
+}
+
+
+.bible-inline a.notemark {
+    display: none;  
+}
+
+.lang.active {
+    font-weight: bold;
+    color: #3498db;
+    text-decoration: underline;
+}
+
+
+/* choix de langue */
+.nav-right {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.lang-dropdown button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.lang-dropdown button:hover {
+    background: #2980b9;
+}
+
+.lang-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 250px;
+    overflow-y: auto;
+    min-width: 120px;
+    z-index: 1000;
+    padding: 0;
+    margin: 4px 0 0 0;
+    list-style: none;
+}
+
+.lang-menu li {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.lang-menu li:hover {
+    background: #f0f0f0;
+}
+
+/* Navigation */
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 100;
+}
+
+.nav-left .site-title {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-center {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.95rem;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.25s ease;
+}
+
+.nav-center a:hover {
+    border-bottom: 1px solid #222;
+}
+
+.nav-right {
+    font-size: 0.9rem;
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: #666;
+}
+
+.nav-right .lang.active {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    position: static;
+	margin: 60px 0 20px;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* ============================= */
+/*          HERO / MAIN          */
+/* ============================= */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero-text {
+    max-width: 780px;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* ============================= */
+/*          PAGES SPÉCIFIQUES   */
+/* ============================= */
+
+/* ----- Lexique ----- */
+
+.lexique-item[open] {
+    background-color: rgba(29, 78, 216, 0.06);
+    border-radius: 8px;
+    padding: 22px 16px;
+}
+
+.lexique {
+    max-width: 900px;
+    margin: 120px auto 100px;
+    padding: 0 20px;
+}
+
+.lexique h1 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.lexique .intro {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+/* Item */
+.lexique-item {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.lexique-item:last-child {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Summary */
+.lexique-item summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.lexique-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.term {
+    font-weight: 500;
+}
+
+/* Définition */
+.definition {
+    margin-top: 14px;
+    max-width: 760px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #1d4ed8;
+}
+
+.definition p {
+    margin: 0;
+}
+
+/* Références */
+.references {
+    margin-top: 16px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.references ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.references li {
+    margin-bottom: 8px;
+}
+
+/* Bible */
+.bible-verse {
+    margin: 0;
+}
+
+.bible-ref {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.bible-ref:hover {
+    background: #2980b9;
+}
+
+
+.verse-number {
+    font-weight: 400;
+    color: #94a3b8;
+    vertical-align: super;
+    font-size: 0.6em;
+}
+
+
+
+.verse-text {
+    color: #444;
+}
+
+
+
+/* ----- Ligne du temps ----- */
+.timeline-page {
+    width: 100%;
+    padding: 0;
+	margin-top: 70px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.timeline-page h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.timeline-intro {
+    max-width: 720px;
+    color: #444;
+    margin-bottom: 60px;
+}
+
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 30px;
+    border-left: 2px solid #ddd;
+}
+
+.event {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.event .dot {
+    position: absolute;
+    left: -41px;
+    top: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.event details summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.event details summary::-webkit-details-marker {
+    display: none;
+}
+
+.event-title {
+    font-size: 1.05rem;
+}
+
+.event-date {
+    font-size: 0.85rem;
+    color: #666;
+    margin-left: 10px;
+}
+
+.event-content {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    max-width: 720px;
+}
+
+.refs {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.event.major .event-title {
+    font-weight: bold;
+}
+
+.event.present .dot {
+    background-color: #666;
+}
+
+/* ----- Vidéo ----- */
+.video-page {
+    max-width: 900px;
+    margin: 120px auto 100px; /* Décalage sous nav + espace footer */
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-intro h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.video-intro p {
+    color: #444;
+    max-width: 700px;
+}
+
+.video-container-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* passe en colonne sur mobile */
+    margin-bottom: 50px;
+}
+
+.video-container-row iframe {
+    width: 45%;
+    min-width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+.youtube-link {
+    text-align: center;
+}
+
+.youtube-link a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff0000;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.youtube-link a:hover {
+    background-color: #cc0000;
+}
+
+/* ============================= */
+/*          PAGE LIVRES          */
+/* ============================= */
+
+.intro {
+    max-width: 900px;
+    margin: 120px auto 40px; /* 120px pour laisser la place à la nav fixe */
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.books-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.book {
+    width: 260px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.book:hover img {
+    transform: scale(1.05);
+}
+
+.book h2 {
+    margin-top: 15px;
+}
+
+/* Zone résumé */
+.book-details {
+    max-width: 800px;
+    margin: 0 auto 80px;
+    padding: 30px;
+    border-top: 1px solid #ccc;
+    display: none;
+}
+
+.store-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ============================= */
+/*          RESPONSIVE           */
+/* ============================= */
+@media (max-width: 700px) {
+    .nav-center {
+        display: none;
+    }
+
+    .hero-text {
+        font-size: 1.6rem;
+    }
+
+    
+    .event .dot {
+        left: -31px;
+    }
+
+    .video-intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .video-container-row iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+	        /* Boutons */
+        .timeline-switch {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .timeline-switch button {
+            padding: 10px 22px;
+            font-size: 0.95rem;
+            background: none;
+            border: 1px solid #222;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .timeline-switch button.active,
+        .timeline-switch button:hover {
+            background: #222;
+            color: #fff;
+        }
+
+        /* Sections iframe */
+        .timeline-embed {
+            width: 100%;
+            display: none;
+        }
+
+        .timeline-embed.active {
+                display: flex;
+    flex-direction: column;
+    height: 100%;
+        }
+
+        .timeline-embed h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        .timeline-frame {
+            width: 100%;
+            border: none;
+            display: block;
+			flex: 1;
+			height: 100%;
+        }
+		
+

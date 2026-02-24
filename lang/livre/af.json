@@ -1,0 +1,36 @@
+{
+  "site": {
+    "title": "Bybelse Profesieë"
+  },
+
+  "intro": {
+    "text": "Hierdie drie boeke ondersoek Bybelse profesieë: dié wat reeds vervul is, dié wat vandag vervul word en dié wat nog moet kom. Deur die akkuraatheid van vorige en huidige profesieë raak te sien, word ons uitgenooi om ons volle vertroue te plaas in Hom wat dit aangekondig het."
+  },
+
+  "books": {
+
+    "book1": {
+      "title": "Titel 1",
+      "description": "Opsomming van boek 1. Hierdie boek stel die reeds vervulde profesieë en hul betekenis voor."
+    },
+
+    "book2": {
+      "title": "Titel 2",
+      "description": "Opsomming van boek 2. Ontleding van huidige profesieë en hul konteks."
+    },
+
+    "book3": {
+      "title": "Titel 3",
+      "description": "Opsomming van boek 3. Studie van toekomstige profesieë en hul vervulling."
+    }
+
+  },
+
+  "store": {
+    "available": "Beskikbaar op:"
+  },
+
+  "footer": {
+    "text": "© Bybelse Inligtingsprojek"
+  }
+}

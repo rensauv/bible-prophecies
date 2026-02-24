@@ -1,0 +1,28 @@
+{
+  "site": {
+    "title": "Profecías bíblicas"
+  },
+  "intro": {
+    "text": "Estos tres libros exploran las profecías bíblicas: las que ya se han cumplido, las que se están cumpliendo hoy y las que aún están por venir. Al reconocer la exactitud de las profecías pasadas y presentes, somos invitados a depositar toda nuestra confianza en Aquel que las anunció."
+  },
+  "books": {
+    "book1": {
+      "title": "Título 1",
+      "description": "Resumen del libro 1. Este libro presenta las profecías ya cumplidas y su significado."
+    },
+    "book2": {
+      "title": "Título 2",
+      "description": "Resumen del libro 2. Análisis de las profecías actuales y de su contexto."
+    },
+    "book3": {
+      "title": "Título 3",
+      "description": "Resumen del libro 3. Estudio de las profecías futuras y de su cumplimiento."
+    }
+  },
+  "store": {
+    "available": "Disponible en:"
+  },
+  "footer": {
+    "text": "© Proyecto de información bíblica"
+  }
+}

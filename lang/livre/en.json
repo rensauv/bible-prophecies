@@ -1,0 +1,28 @@
+{
+  "site": {
+    "title": "Biblical Prophecies"
+  },
+  "intro": {
+    "text": "These three books explore biblical prophecies: those that have already been fulfilled, those being fulfilled today, and those that are still to come. By recognizing the accuracy of past and present prophecies, we are invited to place our full trust in the One who announced them."
+  },
+  "books": {
+    "book1": {
+      "title": "Title 1",
+      "description": "Summary of Book 1. This book presents prophecies that have already been fulfilled and their meaning."
+    },
+    "book2": {
+      "title": "Title 2",
+      "description": "Summary of Book 2. An analysis of current prophecies and their context."
+    },
+    "book3": {
+      "title": "Title 3",
+      "description": "Summary of Book 3. A study of future prophecies and their fulfillment."
+    }
+  },
+  "store": {
+    "available": "Available on:"
+  },
+  "footer": {
+    "text": "© Biblical Information Project"
+  }
+}

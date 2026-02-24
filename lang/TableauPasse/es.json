@@ -1,0 +1,80 @@
+{
+  "timeline": {
+    "statue": {
+      "parties": "Partes de la estatua",
+      "tetedor": "Cabeza de oro",
+      "braspoitrine": "Brazos y pecho de plata",
+      "ventre": "Vientre y muslos de bronce",
+      "royaumedefer": "Reino de hierro"
+    },
+    "bete": {
+      "description": "Bestias que emergen de la tierra",
+      "lion": "León alado",
+      "ours": "Oso",
+      "leopard": "Leopardo",
+      "dixcornes": "Bestia con diez cuernos"
+    },
+    "egliseliste": {
+      "1": "1.º\nEgipto",
+      "2": "2.º\nAsiria",
+      "3": "3.º\nBabilonia",
+      "4": "4.º\nLos medos y persas",
+      "5": "5.º\nGrecia",
+      "6": "6.º\nRoma imperial",
+      "7": "Los\n7 reyes",
+      "8": "6.º\nRoma papal"
+    },
+    "annees": {
+      "49": "49 años",
+      "434": "434 años",
+      "1800": "1800",
+      "sieclelumiere": "El Siglo de las Luces"
+    },
+    "temple": {
+      "annonce": "Anuncio de la reconstrucción del templo",
+      "zorobabel": "Zorobabel inicia la reconstrucción del templo"
+    },
+    "messie": {
+      "retranche": "Mesías eliminado",
+      "resurrection": "Resurrección de Jesús",
+      "couronnement": "Coronación sacerdotal y real"
+    },
+    "roler10": "Los 10 reyes consecutivos",
+    "rome": {
+      "10cornes": "Bestia con diez cuernos y siete cabezas",
+      "barbares": "Roma cae en manos de los bárbaros",
+      "libreliberté": "Libertad religiosa abolida",
+      "537": "537",
+      "justinien": "Roma reconquistada por Justiniano",
+      "constantin": "Constantino",
+      "ligneconstantin": ""
+    },
+    "droite": {
+      "1260": "Los 1260 días (años)",
+      "1150": "Los 1150 días (años)",
+      "destitution": "Destitución del papado como autoridad suprema",
+      "glorieuserev": "Revolución Gloriosa",
+      "1687": "1687",
+      "libreligion": "La libertad religiosa es restaurada",
+      "billright": "Declaración de Derechos"
+    },
+    "napoleon": {
+      "7e": "7.º\nNapoleón",
+      "treaty": "Tratado de Tolentino",
+      "date": "3 nov 1797"
+    },
+    "guerre": {
+      "premiere": "Primera Guerra Mundial",
+      "uneonu": "Primer intento de fundación de la ONU",
+      "premiere2": "Primera Guerra Mundial",
+      "onu": "Fundación de la ONU"
+    },
+    "eglesia": {
+      "ephese": "Éfeso",
+      "smirne": "Esmirna",
+      "pergame": "Pérgamo",
+      "thyatire": "Tiatira",
+      "sardes": "Sardis"
+    }
+  }
+}

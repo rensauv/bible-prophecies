@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <title data-i18n="site.title">
+        Vidéos - Comprendre les prophéties bibliques
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation fixe -->
+<nav class="top-nav">
+	<div class="nav-left">
+	<span class="site-title" data-i18n="nav.siteTitle">Prophéties bibliques</span>
+	</div>
+
+<div class="nav-center">
+    <a href="livre.html" data-i18n="nav.livres">Livres</a>
+    <a href="video.html" data-i18n="nav.videos">Vidéos</a>
+    <a href="lexique.html" data-i18n="nav.lexique">Lexique</a>
+    <a href="ligne-du-temps.html" data-i18n="nav.ligneDuTemps">Ligne du temps</a>
+</div>
+
+<div class="nav-right">
+    <div class="lang-dropdown">
+        <button id="currentLangBtn">Français ▾</button>
+        <ul id="langMenu" class="lang-menu">
+            <!-- les options seront générées par JS -->
+        </ul>
+    </div>
+</div>
+
+</nav>
+
+
+<!-- Contenu principal -->
+<main class="video-page">
+
+    <div class="video-intro">
+
+        <h1 data-i18n="video.title">
+            Découvrez nos vidéos
+        </h1>
+
+        <p data-i18n="video.description">
+            Un espace pour explorer et comprendre les écritures prophétiques à travers nos vidéos explicatives.
+        </p>
+
+    </div>
+
+
+    <div class="video-container-row">
+
+        <iframe
+            src="https://www.youtube.com/embed/nQwINJg_6aU"
+            title="Vidéo 1"
+            allowfullscreen>
+        </iframe>
+
+        <iframe
+            src="https://www.youtube.com/embed/68_Oi_56K4E"
+            title="Vidéo 2"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+
+
+    <div class="youtube-link">
+
+        <a
+            href="https://www.youtube.com/@Revelateur"
+            target="_blank"
+            data-i18n="video.youtube">
+            Visitez notre chaîne YouTube
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer data-i18n="footer.text">
+    © Projet d’information biblique
+</footer>
+
+
+<script src="js/lang.js"></script>
+<script src="js/bible-engine.js"></script>
+
+</body>
+</html>

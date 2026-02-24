@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title data-i18n="site.title">Prophéties bibliques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation fixe -->
+<nav class="top-nav">
+	<div class="nav-left">
+	<span class="site-title" data-i18n="nav.siteTitle">Prophéties bibliques</span>
+	</div>
+
+<div class="nav-center">
+    <a href="livre.html" data-i18n="nav.livres">Livres</a>
+    <a href="video.html" data-i18n="nav.videos">Vidéos</a>
+    <a href="lexique.html" data-i18n="nav.lexique">Lexique</a>
+    <a href="ligne-du-temps.html" data-i18n="nav.ligneDuTemps">Ligne du temps</a>
+</div>
+
+<div class="nav-right">
+    <div class="lang-dropdown">
+        <button id="currentLangBtn">Français ▾</button>
+        <ul id="langMenu" class="lang-menu">
+            <!-- les options seront générées par JS -->
+        </ul>
+    </div>
+</div>
+
+</nav>
+
+<main>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <p data-i18n="intro.text">
+            Texte d’introduction
+        </p>
+    </section>
+
+    <!-- Livres -->
+    <section class="books-grid">
+
+        <div class="book" onclick="showBook(1)">
+            <img src="images/tome1P.png" alt="Livre 1">
+            <h2 data-i18n="books.book1.title">Titre 1</h2>
+        </div>
+
+        <div class="book" onclick="showBook(2)">
+            <img src="images/tome2P.png" alt="Livre 2">
+            <h2 data-i18n="books.book2.title">Titre 2</h2>
+        </div>
+
+        <div class="book" onclick="showBook(3)">
+            <img src="images/tome3P.png" alt="Livre 3">
+            <h2 data-i18n="books.book3.title">Titre 3</h2>
+        </div>
+
+    </section>
+
+    <!-- Détails -->
+    <section id="book-details" class="book-details">
+
+        <h2 id="detail-title"></h2>
+        <p id="detail-text"></p>
+
+        <div class="store-links">
+
+            <p data-i18n="store.available">
+                Disponible sur :
+            </p>
+
+            <a href="#" target="_blank">Amazon Kindle</a>
+            <a href="#" target="_blank">Kobo</a>
+            <a href="#" target="_blank">Apple Books</a>
+            <a href="#" target="_blank">Google Play Books</a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer data-i18n="footer.text">
+    © Projet d’information biblique
+</footer>
+
+<script src="js/lang.js"></script>
+<script src="js/bible-engine.js"></script>
+
+<script>
+
+function showBook(id) {
+
+    const details = document.getElementById("book-details");
+    const title = document.getElementById("detail-title");
+    const text = document.getElementById("detail-text");
+
+    details.style.display = "block";
+
+
+    // 🔹 On lit la traduction active
+    const data = window.currentTranslations;
+
+    if(!data || !data.books){
+        console.warn("Traductions non chargées");
+        return;
+    }
+
+
+    if (id === 1) {
+        title.textContent = data.books.book1.title;
+        text.textContent  = data.books.book1.description;
+    }
+
+    if (id === 2) {
+        title.textContent = data.books.book2.title;
+        text.textContent  = data.books.book2.description;
+    }
+
+    if (id === 3) {
+        title.textContent = data.books.book3.title;
+        text.textContent  = data.books.book3.description;
+    }
+
+
+    details.scrollIntoView({ behavior: "smooth" });
+}
+
+
+</script>
+
+</body>
+</html>

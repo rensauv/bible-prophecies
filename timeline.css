@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background: #888175;
+  font-family: Arial, sans-serif;
+}
+
+#timeline {
+  position: relative;
+  width: 4000px;   /* ou plus selon ta timeline */
+  min-height: 500px;
+  background: #888175;
+}
+
+.bulle[data-detail] {cursor: pointer;}
+.bulle:not([data-detail]) {cursor: grab;}
+
+
+/* =======================
+   LIGNES
+======================= */
+.ligne-h,
+.ligne-v {
+  position: absolute;
+  background: black;
+  z-index: 1; /* SOUS les bulles */
+}
+
+.ligne-h {height: 2px;}
+.ligne-v {width: 2px;}
+
+#viewport {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#timeline {transform-origin: 0 0;cursor: grab;}
+#timeline.dragging {cursor: grabbing;}
+
+/* =======================
+   BULLES (base commune)
+======================= */
+.bulle {
+  position: absolute;
+  padding: 10px 14px;
+  color: black;
+  z-index: 2;
+  white-space: normal;  
+  max-width: none;    
+  box-sizing: border-box; 
+  user-select: none;
+  background: #e5e5e5;
+  border-radius: 5px;
+  text-align: Left;
+}
+
+.no-bg{background: transparent;}
+.shape-Square{border-radius: 0px;}
+.data-drawline {background: transparent;padding: 0;}
+.bg-dark{background: #a8a5a0;}
+.zback{  z-index: 0;}
+
+
+.bulle.selected {
+  background: #cfe9f6 !important;
+  color: #1f3a4d !important;    
+  box-shadow: 0 0 12px rgba(100,170,220,0.5) !important;
+  min-width: 600px !important;
+  z-index: 3 !important;
+}
+
+
+
+
+

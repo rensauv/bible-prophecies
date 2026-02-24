@@ -1,0 +1,80 @@
+{
+  "timeline": {
+    "statue": {
+      "parties": "Dele van die standbeeld",
+      "tetedor": "Goue kop",
+      "braspoitrine": "Arms en bors van silwer",
+      "ventre": "Belly en dye van brons",
+      "royaumedefer": "Ysterryk"
+    },
+    "bete": {
+      "description": "Diere wat uit die aarde verskyn",
+      "lion": "Gevlerkte leeu",
+      "ours": "Beer",
+      "leopard": "Luiperd",
+      "dixcornes": "Dier met 10 horings"
+    },
+    "egliseliste": {
+      "1": "1ste\nEgipte",
+      "2": "2de\nAssirië",
+      "3": "3de\nBabylon",
+      "4": "4de\nMediese en Persiese Ryk",
+      "5": "5de\nGriekeland",
+      "6": "6de\nRomeinse Ryk",
+      "7": "Die\n7 konings",
+      "8": "6de\nPouslike Rome"
+    },
+    "annees": {
+      "49": "49 jaar",
+      "434": "434 jaar",
+      "1800": "1800",
+      "sieclelumiere": "Die Verligting"
+    },
+    "temple": {
+      "annonce": "Aankondiging van die heropbou van die tempel",
+      "zorobabel": "Zorobabel begin die heropbou van die tempel"
+    },
+    "messie": {
+      "retranche": "Messias uitgeroei",
+      "resurrection": "Opstanding van Jesus",
+      "couronnement": "Priesterlike en koninklike kroon"
+    },
+    "roler10": "Die 10 opeenvolgende konings",
+    "rome": {
+      "10cornes": "Dier met 10 horings en sewe koppe",
+      "barbares": "Rome val onder die hand van die barbare",
+      "libreliberté": "Godsdienstige vryheid afgeskaf",
+      "537": "537",
+      "justinien": "Rome herower deur Justinianus",
+      "constantin": "Constantin",
+      "ligneconstantin": ""
+    },
+    "droite": {
+      "1260": "Die 1260 dae (jare)",
+      "1150": "Die 1150 dae (jare)",
+      "destitution": "Ontsetteling van die pauspaaie as oppergesag",
+      "glorieuserev": "Glorieryke revolusie",
+      "1687": "1687",
+      "libreligion": "Godsdienstige vryheid herstel",
+      "billright": "Bill of Rights"
+    },
+    "napoleon": {
+      "7e": "7de\nNapoleon",
+      "treaty": "Verdrag van Tolentino",
+      "date": "3 Nov 1797"
+    },
+    "guerre": {
+      "premiere": "Eerste Wêreldoorlog",
+      "uneonu": "Eerste poging om die VN te stig",
+      "premiere2": "Eerste Wêreldoorlog",
+      "onu": "Stigting van die VN"
+    },
+    "eglesia": {
+      "ephese": "Efese",
+      "smirne": "Smyrna",
+      "pergame": "Pergamum",
+      "thyatire": "Tiatira",
+      "sardes": "Sardes"
+    }
+  }
+}

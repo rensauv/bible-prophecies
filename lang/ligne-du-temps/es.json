@@ -1,0 +1,11 @@
+{
+  "site": {
+    "title": "Línea de tiempo – Comprensión de las profecías bíblicas"
+  },
+  "timeline": {
+    "btnPast": "Ver la línea de tiempo del pasado",
+    "btnPresent": "Ver la línea de tiempo del presente y del futuro",
+    "pastTitle": "Profecías cumplidas – El pasado",
+    "presentTitle": "Profecías en curso y futuras – Presente y futuro"
+  }
+}

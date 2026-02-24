@@ -1,0 +1,80 @@
+{
+  "timeline": {
+    "statue": {
+      "parties": "Parties de la status",
+      "tetedor": "Tête d'or",
+      "braspoitrine": "Bras et poitrine d'argent",
+      "ventre": "Ventre et cuisse d'airain",
+      "royaumedefer": "Royaume de fer"
+    },
+    "bete": {
+      "description": "Bêtes qui émergent de la terre",
+      "lion": "Lion ailé",
+      "ours": "Ours",
+      "leopard": "Léopard",
+      "dixcornes": "Bête aux 10 cornes"
+    },
+    "egliseliste": {
+      "1": "1ère\nEgypte",
+      "2": "2e\nAssyrie",
+      "3": "3e\nBabylone",
+      "4": "4e\nLes mèdes perses",
+      "5": "5e\nGrèce",
+      "6": "6e\nRome impériale",
+      "7": "Les\n7 rois",
+      "8": "6e\nRome Papale"
+    },
+    "annees": {
+      "49": "49 années",
+      "434": "434 années",
+      "1800": "1800",
+      "sieclelumiere": "Le siècle des lumières"
+    },
+    "temple": {
+      "annonce": "Annonce de la reconstruction du temple",
+      "zorobabel": "Zorobabel débute la reconstruction du temple"
+    },
+    "messie": {
+      "retranche": "Messie retranché",
+      "resurrection": "Resurrection de Jésus",
+      "couronnement": "Couronnement prête et roi"
+    },
+    "roler10": "Les 10 rois consécutifs)",
+    "rome": {
+      "10cornes": "Bête aux 10 cornes et sept têtes",
+      "barbares": "Rome tombe sous la main des barbares",
+      "libreliberté": "Liberté religieuse abolie",
+      "537": "537",
+      "justinien": "Rome reconquise par Justinien",
+      "constantin": "Constantin",
+      "ligneconstantin": ""
+    },
+    "droite": {
+      "1260": "Les 1260 jours (ans)",
+      "1150": "Les 1150 jours (ans)",
+      "destitution": "Destitution de la papauté en tant q'autorité suprème",
+      "glorieuserev": "Glorieuse révolution",
+      "1687": "1687",
+      "libreligion": "La liberté religieuse revient",
+      "billright": "Bill right"
+    },
+    "napoleon": {
+      "7e": "7e\nNapoléon",
+      "treaty": "Traité de tolentino",
+      "date": "3 nov 1797"
+    },
+    "guerre": {
+      "premiere": "1ère Guerre mondial",
+      "uneonu": "1ère tentative de la fondation de l'ONU",
+      "premiere2": "1ère Guerre mondial",
+      "onu": "fondation de l'ONU"
+    },
+    "eglesia": {
+      "ephese": "Éphèse",
+      "smirne": "Smirne",
+      "pergame": "Pergame",
+      "thyatire": "Thyatire",
+      "sardes": "Sardes"
+    }
+  }
+}

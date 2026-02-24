@@ -1,0 +1,12 @@
+{
+  "site": {
+    "title": "Léxico bíblico"
+  },
+  "lexicon": {
+    "title": "Léxico bíblico",
+    "intro": "Este léxico presenta el significado de los símbolos bíblicos tal como se utilizan en los libros proféticos. Cada definición está respaldada por los textos bíblicos correspondientes."
+  },
+  "footer": {
+    "text": "© Proyecto de información bíblica"
+  }
+}
