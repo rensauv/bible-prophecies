@@ -10,20 +10,25 @@
   "books": {
 
     "book1": {
-      "title": "Titre 1",
-      "description": "Résumé du livre 1. Ce livre présente les prophéties déjà accomplies et leur signification."
+      "title": "La prophétie vous introduit en ce côté méconnu du passé",
+      "description": ""
     },
 
     "book2": {
-      "title": "Titre 2",
-      "description": "Résumé du livre 2. Analyse des prophéties actuelles et de leur contexte."
+      "title": "La prophétie dénonce l'apostasie quasi généralisée du christianisme actuel",
+      "description": ""
     },
 
     "book3": {
-      "title": "Titre 3",
-      "description": "Résumé du livre 3. Étude des prophéties futures et de leur accomplissement."
-    }
+      "title": "La prophétie vous introduit en ce futur exposant le processus de ces six successives trompettes menant à l'événement tant redouté",
+      "description": ""
+    },
 
+    "book4": {
+      "title": "La prophétie vous amène à ce dernier et tragique événement de la fin",
+      "description": ""
+    }
+	
   },
 
   "store": {

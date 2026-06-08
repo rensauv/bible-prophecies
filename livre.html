@@ -99,50 +99,26 @@
 <script src="js/bible-engine.js"></script>
 
 <script>
-
 function showBook(id) {
-
     const details = document.getElementById("book-details");
     const title = document.getElementById("detail-title");
     const text = document.getElementById("detail-text");
 
-    details.style.display = "block";
-
-
-    // 🔹 On lit la traduction active
     const data = window.currentTranslations;
 
-    if(!data || !data.books){
-        console.warn("Traductions non chargées");
+    if (!data || !data.books || !data.books["book" + id]) {
+        console.warn("Livre introuvable :", "book" + id);
         return;
     }
 
+    const book = data.books["book" + id];
 
-    if (id === 1) {
-        title.textContent = data.books.book1.title;
-        text.textContent  = data.books.book1.description;
-    }
+    title.textContent = book.title || "";
+    text.textContent = book.description || "";
 
-    if (id === 2) {
-        title.textContent = data.books.book2.title;
-        text.textContent  = data.books.book2.description;
-    }
-
-    if (id === 3) {
-        title.textContent = data.books.book3.title;
-        text.textContent  = data.books.book3.description;
-    }
-	
-	    if (id === 4) {
-        title.textContent = data.books.book4.title;
-        text.textContent  = data.books.book4.description;
-    }
-
-
+    details.style.display = "block";
     details.scrollIntoView({ behavior: "smooth" });
 }
-
-
 </script>
 
 </body>
