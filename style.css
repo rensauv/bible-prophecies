@@ -4,7 +4,9 @@
 
 
 
-
+#detail-text {
+    white-space: pre-line;
+}
 /* Base */
 body {
     margin: 0;
