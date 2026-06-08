@@ -48,17 +48,22 @@
 
         <div class="book" onclick="showBook(1)">
             <img src="images/tome1P.png" alt="Livre 1">
-            <h2 data-i18n="books.book1.title">Titre 1</h2>
+            <h2 data-i18n="books.book1.title">Tome 1</h2>
         </div>
 
         <div class="book" onclick="showBook(2)">
             <img src="images/tome2P.png" alt="Livre 2">
-            <h2 data-i18n="books.book2.title">Titre 2</h2>
+            <h2 data-i18n="books.book2.title">Tome 2</h2>
         </div>
 
         <div class="book" onclick="showBook(3)">
             <img src="images/tome3P.png" alt="Livre 3">
-            <h2 data-i18n="books.book3.title">Titre 3</h2>
+            <h2 data-i18n="books.book3.title">Tome 3</h2>
+        </div>
+		
+		        <div class="book" onclick="showBook(4)">
+            <img src="images/tome4P.png" alt="Livre 4">
+            <h2 data-i18n="books.book4.title">Tome 4</h2>
         </div>
 
     </section>
@@ -126,6 +131,11 @@ function showBook(id) {
     if (id === 3) {
         title.textContent = data.books.book3.title;
         text.textContent  = data.books.book3.description;
+    }
+	
+	    if (id === 4) {
+        title.textContent = data.books.book4.title;
+        text.textContent  = data.books.book4.description;
     }
 
 
