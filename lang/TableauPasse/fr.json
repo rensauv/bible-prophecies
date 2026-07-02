@@ -8,7 +8,7 @@
       "royaumedefer": "Royaume de fer"
     },
     "bete": {
-      "description": "Bêtes qui émergent de la terre",
+      "description": "Bêtes qui émergent de la mer",
       "lion": "Lion ailé",
       "ours": "Ours",
       "leopard": "Léopard",
@@ -21,7 +21,7 @@
       "4": "4e\nLes mèdes perses",
       "5": "5e\nGrèce",
       "6": "6e\nRome impériale",
-      "7": "Les\n7 rois",
+      "7": "Les 7 rois\nconsécutifs",
       "8": "6e\nRome Papale"
     },
     "annees": {
@@ -39,7 +39,7 @@
       "resurrection": "Resurrection de Jésus",
       "couronnement": "Couronnement prête et roi"
     },
-    "roler10": "Les 10 rois consécutifs)",
+    "roler10": "Les 10 rois consécutifs",
     "rome": {
       "10cornes": "Bête aux 10 cornes et sept têtes",
       "barbares": "Rome tombe sous la main des barbares",
@@ -66,7 +66,7 @@
     "guerre": {
       "premiere": "1ère Guerre mondial",
       "uneonu": "1ère tentative de la fondation de l'ONU",
-      "premiere2": "1ère Guerre mondial",
+      "premiere2": "2e Guerre mondial",
       "onu": "fondation de l'ONU"
     },
     "eglesia": {
